@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>
+
+      <div class="user">
+          <img src="pic.jpg" alt="">
+          <h3 class="name">Bibin A</h3>
+          <p class="post">Full Stack developer</p>
+      </div>
+
+      <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+</header>
+
+  <div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts -->
+
+  <section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>Bibin A</span></h1>
+    <p>I'm a passionate <span>MERN Stack developer</span></p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+  </section>
+
+<!-- home section ends -->
+
+<!-- about section starts -->
+
+  <section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+
+      <div class="info">
+          <h3> <span> name : </span> Bibin A </h3>
+          <h3> <span> age : </span> 20 </h3>
+          <h3> <span> qualification : </span> +2 </h3> 
+          
+          <h3> <span> language : </span> Malayalam </h3>
+      </div>
+      
+      <div class="counter">
+
+        <div class="box">
+            <span>0+</span>
+            <h3>years of experience</h3>
+        </div>
+
+        <div class="box">
+          <span>2</span>
+          <h3>projects completed</h3>
+      </div>
+
+      
+
+       
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- about section ends -->
+
+<!-- education section starts -->
+
+  <section class="education" id="education">
+
+    <h1 class="heading"> my <span>education</span></h1>
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2016</span>
+        <h3>10th standard</h3>
+        <p>Completed my 10th standard at Infant Jesus Cental School Kuravankonam,Trivandrum,India</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>12th standard</h3>
+        <p>Completed my 12th standard at Infant Jesus Cental School Kuravankonam,Trivandrum,India</p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Joined Brototype</h3>
+        <p>Brototype is not just an institute its more like a tech community that encourages self learning and provide an environment for it. Im still on the learning phase in Brototype, this website is part of the brototype journey.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- education section ends -->
+
+
+<!-- portfolio section starts -->
+
+  <section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> my <span>portfolio</span></h1>
+
+    <div class="box-container">
+
+      <div class="box">
+
+        <a href="https://int-bibin.github.io/starbucks.github.io/" target="_blank"><img src="img1.png" alt=""></a>
+
+      </div>
+
+      <div class="box">
+
+        <a href="https://int-bibin.github.io/teslaclone.github.io/" target="_blank"><img src="img2.png" alt=""></a>
+
+      </div>
+
+      
+    </div>
+
+  </section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+
+
+<section class="contact" id="contact">
+
+  <h1 class="heading"> <span>contact</span> me </h1>
+
+  <div class="row">
+
+      <div class="box">
+
+            <h3 class="title">contact info</h3>
+
+            <div class="info">
+
+              <h3> <i class="fas fa-envelope"></i> bibina3210@gmail.com </h3>
+
+              <h3> <i class="fas fa-phone"></i> +91 8547552669 </h3>
+
+              <h3> <i class="fas fa-phone"></i> +91 7012112056 </h3>
+
+              <h3> <i class="fas fa-map-marker-alt"></i> kerala, india - 695028. </h3>
+
+            </div>
+
+      </div>
+
+      
+      <form id="gform" action="https://script.google.com/macros/s/AKfycbwk5_K7hn2twNx0To_z_srAk5tVV0w67MCW20IqrhYRQBasaB0YFIyGtsc2P8gevSnJNw/exec" method="post">
+        
+        
+        <input type="text" placeholder="name" class="box" id="contact-name" onekeyup="validateName()">
+        <span id="name-error"></span>
+
+        <input type="email" placeholder="email" class="box" id="contact-email">
+        <span id="email-error"></span>
+
+        <input type="text" placeholder="project" class="box" id="contact-project">
+        <span id="project-error"></span>
+
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <span id="message-error"></span>
+        <br>
+        <button type="submit" value="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+        <br><br>
+        <span id="submit-error"></span>
+
+      </form>
+
+  </div>
+
+</section>
+
+
+<!-- contact section ends -->
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="script.js"></script>
+   
+</body>
+</html>
